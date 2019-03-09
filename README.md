@@ -1,2 +1,2 @@
 # Tinkering_project
-this is the projects related to NGO project
+These are the projects related to NGO.
