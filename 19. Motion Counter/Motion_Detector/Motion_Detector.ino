@@ -1,14 +1,19 @@
 #include<LiquidCrystal.h>
+
+//Pin declarations
 const int ir_in=10;
 const int ir_out=11;
 const int buzzer=9;
+
+//Variable declarations
 int in_high;
 int out_high;
 int total_people=0;
-LiquidCrystal lcd(13,12,7,6,5,4);
+
+LiquidCrystal lcd(13,12,7,6,5,4); //Initializing LCD
+
 void setup() 
 {
-  // put your setup code here, to run once:
   
   Serial.begin(9600);
   lcd.begin(16,2);
@@ -19,7 +24,6 @@ void setup()
 
 void loop() 
 {
-  // put your main code here, to run repeatedly:
   in_high=digitalRead(ir_in);
   out_high=digitalRead(ir_out);
   lcd.clear();
